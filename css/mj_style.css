@@ -23,26 +23,35 @@ body{
 
 }
 
-#MoviesNowPlaying{
+#mj_updates{
+	height: 500px;
+	width: 100%;
+	position: relative;
+	background-color: rgba(74,125,188, 0.3);
+
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 
 }
 
+#MoviesNowPlaying{
+}
 
 #MoviesNowPlaying li{
-
-	padding: 0px;
+	margin-left: 5px;
 	float: left;
 	width: 200px;
 	height: auto;
+	text-align: center;
+	font-size: 22px;
 	/* For No bullet points*/
 	list-style: none;
 }
 #MoviesNowPlaying img{
-
 	padding: 0px;
 	float: left;
 	width: 200px;
-	height: auto;
+	height: 300px;
 
 }
 
@@ -63,6 +72,7 @@ body{
 
 }
 
+/* Home Page Carousel (Main Slider)*/
 #myCarousel{
 	margin-top: 120px;
 	position: absolute relative;
@@ -72,4 +82,14 @@ body{
 	min-width: 100%;
   	max-width: none;
   
+}
+
+.previous{
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.next{
+	cursor: pointer;
+	visibility: visible;
 }

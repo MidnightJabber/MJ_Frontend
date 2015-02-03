@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/mj_style.css" type="text/css" />
 
 		<!-- Linking the CSS file -->
-		<!--<link rel="stylesheet" href="font-awesome-4.3.0.css/css/font-awesome.css" type="text/css" />-->
+		<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.css" type="text/css" />
 
 		<!-- Linking Bootstrap 3 -->
 		<link type="text/css" rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css" />
@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="bootstrap-3.3.2-dist/js/bootstrap.js"></script>
 
 		<script type="text/javascript" src="js/home_script.js"></script>
+
+		 <script language="JavaScript" type="text/javascript" src="ContentFlow/contentflow.js"></script>
 
 </head>
 
@@ -97,13 +99,25 @@
 		</a>
 	</div>
 
-	<div>
-		<h1><span class="label label-default">Movies This Week:</span></h1><br>
-	</div>
 
 	<div id="MoviesNowPlaying">
-		<ul>
-		</ul>
+		<h1><span class="label label-default">Movies This Week:</span></h1><br>
+
+		<nav>
+  			<ul class="pager">
+    			<li class="previous" onclick="prevNewMovies()"><a><span aria-hidden="true">&larr;</span>Previous</a></li>
+   				 <li class="next" onclick="nextNewMovies()" style="float: right;"><a><span aria-hidden="true">&rarr;</span>Next</a></li>
+    			<div class="container">
+					 <ul>
+				 		<!--AJAX Fills up the space -->
+				 	</ul>
+				</div>
+ 			 </ul>
+		</nav>
+
+	</div>
+
+	<div id="mj_updates">
 	</div>
 
 </body>
