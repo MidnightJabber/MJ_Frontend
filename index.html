@@ -3,9 +3,100 @@
 
 <head>
 	<title>Midnight Jabber</title>
+
+		<!-- Linking the CSS file -->
+		<link rel="stylesheet" href="css/mj_style.css" type="text/css" />
+
+		<!-- Linking the CSS file -->
+		<!--<link rel="stylesheet" href="font-awesome-4.3.0.css/css/font-awesome.css" type="text/css" />-->
+
+		<!-- Linking Bootstrap 3 -->
+		<link type="text/css" rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css" />
+
+		<!--Favicon-->
+		<link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+		<!-- Need dem fonts! -->
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.3.0.css/fonts/font-awesome.css">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+
 </head>
 
 <body>
+	<div id="header">
+
+		<ul>
+			<li>Home</li>
+			<li>Movies</li>
+			<li>TV Shows</li>	
+			<li>Games</li>
+			<li>Books</li>
+
+			
+		</ul>
+	</div>
+
+	<!-- Carousel 
+	**********************************************************************************-->
+	<div id="myCarousel" class="carousel slide">
+		
+		<!-- Carousel indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+	
+
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="images/slide1.jpg">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Hello World</h1>
+							<p>MidnightJabber is Coming Soon. Get ready for the next experience in Movies, TV Shows, Books and Games</p>
+							<p><a class="btn btn-large btn-primary">Become a Blogger</a></p>
+						</div>
+					</div>
+			</div>
+
+			<div class="item">
+				<img src="images/slide2.jpg">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Hello World</h1>
+							<p>MidnightJabber is Coming Soon. Get ready for the next experience in Movies, TV Shows, Books and Games</p>
+							<p><a class="btn btn-large btn-primary">Become a Blogger</a></p>
+						</div>
+					</div>
+			</div>
+
+			<div class="item">
+				<img src="images/slide3.jpg">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Hello World</h1>
+							<p>MidnightJabber is Coming Soon. Get ready for the next experience in Movies, TV Shows, Books and Games</p>
+							<p><a class="btn btn-large btn-primary">Become a Blogger</a></p>
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<!-- Next and Previous buttons for the Carousel -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
 </body>
 
 </html>
