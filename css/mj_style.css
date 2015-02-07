@@ -27,7 +27,12 @@ body{
 	height: 500px;
 	width: 100%;
 	position: relative;
-	background-color: rgba(74,125,188, 0.3);
+	/* background color (for non css3 browsers) and gradient */
+    background-color: #7f7f7f;
+    background: -moz-linear-gradient(top, #7f7f7f, #323232 50%, #000 );
+    background: -webkit-gradient(linear, left top, left bottom, from(#7f7f7f), color-stop(1.0, #323232), to(#000) );
+    /* linear gradient for IE 5.5+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#404040', EndColorStr='#000000');
 
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
@@ -46,6 +51,7 @@ body{
 	font-size: 22px;
 	/* For No bullet points*/
 	list-style: none;
+
 }
 #MoviesNowPlaying img{
 	padding: 0px;
@@ -92,4 +98,85 @@ body{
 .next{
 	cursor: pointer;
 	visibility: visible;
+}
+
+#podcast-comingSoon{
+
+	width: 100%;
+	height: 600px;
+	background:;
+}
+
+#podcast-comingSoon-text{
+
+	font-size: 88px;
+	margin-left: 40%;
+	opacity: 0;
+	margin-top: -400px;
+
+
+	-webkit-transition: all 2.5s ease-in-out;
+    -moz-transition: all 2.5s ease-in-out;
+    -o-transition: all 2.5s ease-in-out;
+    transition: all 2.5s ease-in-out;
+}
+
+
+
+#footer{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 0px;
+	border-top: 1px solif #FFFFFF;
+}
+
+.border.carbon {
+    /* general */
+    border-color: #000;
+    /* background color (for non css3 browsers) and gradient */
+    background-color: #2d2d2d;
+    background: -moz-linear-gradient(top, #404040, #2d2d2d 50%, #000 );
+    background: -webkit-gradient(linear, left top, left bottom, from(#404040), color-stop(0.5, #2d2d2d), to(#000) );
+    /* linear gradient for IE 5.5+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#404040', EndColorStr='#000000');
+}
+
+
+#phone-outer {
+
+    border: 1px solid #FFFFFF;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    box-shadow: 0 3px 0.7px 1px #777777, 0 -7px rgba(0, 0, 0, 0.4) inset;
+
+    height: 500px;
+    width: 420px;
+    margin-top: 0px;
+    margin-left: 100%;
+
+
+    background-image: linear-gradient(right, #111 11%, #333 56%);
+    background-image: -o-linear-gradient(right, #111 11%, #333 56%);
+    background-image: -moz-linear-gradient(right, #111 11%, #333 56%);
+    background-image: -webkit-linear-gradient(right, #111 11%, #333 56%);
+    background-image: -ms-linear-gradient(right, #111 11%, #333 56%);
+    background-image: gradient(right, #111 11%, #333 56%);
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#phone-inner {
+	margin:0 auto;
+	background-image: url("../images/matrix.gif");
+	width:360px;
+	height:460px;	
+
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }

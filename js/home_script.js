@@ -94,7 +94,32 @@ function nextNewMovies(){
 
 }
 
+function animatePodcastSection(){
+
+/*
+	document.addEventListener('scroll', function(event){
+		if(document.body.scrollHeight == document.body.scrollTop + window.innerHeight){
+			alert('YOHOHOHOH');
+		}
+	});
+*/
+
+	$(window).scroll(function() {
+	   if($(window).scrollTop() + $(window).height() > $(document).height() - 330) {
+	   		ele1 = document.getElementById('phone-outer');
+	        ele1.style.marginLeft = "5%";
+
+	        ele2 = document.getElementById('podcast-comingSoon-text');
+	        ele2.style.opacity = "1";
+
+	       
+	   }
+	});
+
+}
+
 
 $(document).ready(function(){
 	getMoviesNowPlaying();
+	animatePodcastSection();
 });
