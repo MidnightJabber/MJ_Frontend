@@ -11,6 +11,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -20,6 +21,58 @@
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
 }
+
+/**********EDITED PART BY VISHRUT REDDI***************/
+/* This is done to edit the color of font icos */
+
+.fa-black{
+  color: black;
+}
+
+.fa-twitter-color{
+  color: #4099FF;
+}
+
+.fa-facebook-color{
+  color: #3B5998;
+}
+
+.fa-google-plus-color{
+  color: #D34836;
+}
+
+.fa-linkedin-color{
+  color: #007BB6;
+}
+
+.fa-youtube-color{
+  color: #B31217;
+}
+
+.fa-github-color{
+  color: white;
+}
+
+.fa-twitch-color{
+  color: #6441A5;
+}
+
+/*****************************************************/
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/*****EDITED BY VISHRUT REDDI********/
+/* New Size Added */
+.fa-1-5x {
+  font-size: 1.5em;
+}
+/************************************/
+
+
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
